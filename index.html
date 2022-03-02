@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <!-- BS 5-->
-    
+    <!-- BS5-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Mukta:wght@300&display=swap" rel="stylesheet">
+    <!-- css file -->
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
     <title>My Cloud PA</title>
 </head>
 <body>
-    <!-- NAVBAR -->
+    <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
@@ -43,26 +47,69 @@
             </div>
         </div>
     </nav>
-
-    <section id="headline">
+    <!-- headline section -->
+    <section class="d-flex" id="headline">
       <div class="align-self-center text-white container">
           <div class="row">
-              <div class="col text-center mb-2">
+              <div class="text-center mb-2">
                   <h1>Headline</h1>
               </div>
           </div>
           <div class="row">
-            <div class="col text-center mb-2">
-                <h6>SubTitle</h6>
+            <div class="text-center mb-2">
+                <h6>Sub Title</h6>
             </div>
         </div>
         <div class="row">
-            <div class="col d-inline-flex justify-content-center text-center mb-2">
+            <!-- login button med and wider -->
+            <div class="d-none d-md-inline-flex justify-content-center text-center mb-2">
                 <btn class="btn w-25 text-white" href="#">LOGIN</btn>
+            </div>
+            <!-- login button up to med -->
+            <div class="d-md-none col-12 text-center">
+                <btn class="btn w-75 text-white" href="#">Login</btn>
             </div>
         </div>
       </div>
     </section>
 
+    <!-- services -->
+    <div class="container mx-auto">
+        <div class="row d-flex justify-content-center text-center text-lg-start">
+            <div class="col-12 mt-3 d-flex justify-content-center">
+                <h3>SERVICES</h3>
+            </div>
+            <div class="col-8 col-lg-3 ms-2 me-3 mt-3 justify-content-center shadow-sm position-0">
+                <h3 class="d-lg-none" >1</h3>
+                <h2 class="d-none d-lg-inline position-1">1</h2>
+                <h4 class="ms-1">Book</h4>
+                <img class="d-none d-lg-inline position-2" src="/assets/img/book.png" height="30" alt="book">
+                <p class="ms-1">Book in a virtual consultation at a time that suits you!</p>
+            </div>
+            <div class="col-8 col-lg-3 mt-3 ms-2 me-3 justify-content-center shadow-sm position-0">
+                <h3 class="d-lg-none" >2</h3>
+                <h2 class="d-none d-lg-inline position-1">2</h2>
+                <h4 class="ms-1">Chat With Us</h4>
+                <img class="d-none d-lg-inline position-2" src="/assets/img/chat.png" height="30" alt="book">
+                <p class="ms-1 d-lg-none">Chat with our hair specialists and tell your hair story!</p>
+                <p class="ms-1 d-none d-lg-flex">Our specialists will confirm your booking date and time on the consultation call.</p>
+            </div>
+            <div class="col-8 col-lg-3 mt-3 ms-2 me-2 justify-content-center shadow-sm position-0">
+                <h3 class="d-lg-none" >3</h3>
+                <h2 class="d-none d-lg-inline position-1">3</h2>
+                <h4 class="ms-1">Relax</h4>
+                <img class="d-none d-lg-inline position-2" src="/assets/img/relax.png" height="30" alt="book">
+                <p class="ms-1">Our specialists will give you the personalised consultation.</p>
+            </div>
+             <!-- login button med and wider -->
+             <div class="d-none d-md-inline-flex justify-content-center text-center mb-2 mt-3">
+                <btn class="btn w-25 text-white" href="#">BOOK YOUR SERVICE</btn>
+            </div>
+            <!-- login button up to med -->
+            <div class="d-md-none col-12 text-center mb-2 mt-3">
+                <btn class="btn w-75 text-white" href="#">BOOK YOUR SERVICE</btn>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

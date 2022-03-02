@@ -1,10 +1,62 @@
+body {
+    background-color: ghostwhite;
+}
+/* sharp btn corners and colour*/
 .btn {
     border-radius: 0 !important;
     background-color: #b65039;
 }
+/* button size in navbar*/
+btn.nav-link {
+    width: 80px;
+}
+/* font in navbar */
+a.nav-link,
+btn.nav-link {
+    font-family: 'Mukta', sans-serif;
+    font-size: .8rem;
+}
+/* headline section image and height*/
 #headline {
     background-image: url(/assets/img/head-image.jpg);
     background-size: cover;
-    height: calc(100vh - 58px);
-    display: flex;
+    height: calc(70vh - 58px);
+}
+/* positions for icons and numbers in services section*/
+.position-0 {
+    position: relative;
+}
+.position-1 {
+    position: absolute;
+    left: -8px;
+    top: -20px;
+    font-weight: 200;
+}
+.position-2 {
+    position: absolute;
+    right: -5px;
+    top: -0px;
+}
+/* lighter headings fonts */
+h2{
+    font-size: 3em;
+    
+}
+h3 {
+    font-family: 'Lato', Verdana;
+    font-weight: 300;
+}
+h4 {
+    font-family: 'Lato', Verdana;
+    font-size: 1rem;
+    font-weight: 300;
+}
+p {
+    font-size: .6rem;
+}
+/* responsive design medium and larger */
+@media only screen and (min-width: 768px) {
+    #headline {
+        height: calc(75vh - 58px);
+    }
 }
